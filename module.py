@@ -26,7 +26,12 @@ Your solutions must pass the automated test runner.
 #   - Do NOT print anything.
 #
 def is_even(num: int) -> bool:
-    pass
+    if (num, int) % 2 == 0:
+        return True
+    else:
+        return False
+
+    
 
 
 # -------------------------------------------------
