@@ -82,7 +82,15 @@ def count_vowels(s: str) -> int:
 #   - Do NOT use built-in reverse() method.
 #
 def reverse_string(s: str) -> str:
-    pass
+    output = ""
+    index = len(s)-1
+
+    while index >= 0:
+        char = s[index]
+        output = output + char
+        index = index - 1
+    return output
+    
 
 
 # -------------------------------------------------
