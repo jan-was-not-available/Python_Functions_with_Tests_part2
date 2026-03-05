@@ -2,10 +2,10 @@ from module import max_of_three
 FUNCTION_TO_TEST = max_of_three
 
 TESTS = [
-    ((1, 2, 3), 3),
-    ((10, 5, 8), 10),
-    ((-1, -5, -3), -1),
-    ((7, 7, 7), 7),
+    (1, 2, 3),
+    (10, 5, 8),
+    (-1, -5, -3),
+    (7, 7, 7), 
 ]
 
 # ==========================================
@@ -37,7 +37,7 @@ def run_all_tests():
 
 def one_test_success(inputs, expected):
     try:
-        actual = FUNCTION_TO_TEST(inputs)
+        actual = FUNCTION_TO_TEST(*inputs)
         print(f"Expected: {expected}, Got: {actual}")
         assert actual == expected
         return True

@@ -2,11 +2,11 @@ from module import is_even
 FUNCTION_TO_TEST = is_even
 
 TESTS = [
-    ((2,), True),
-    ((3,), False),
-    ((0,), True),
-    ((-4,), True),
-    ((-5,), False)
+    (2, True),
+    (3, False),
+    (0, True),
+    (-4, True),
+    (-5, False)
 ]
 
 # ==========================================

@@ -37,7 +37,7 @@ def run_all_tests():
 
 def one_test_success(inputs, expected):
     try:
-        actual = FUNCTION_TO_TEST(inputs)
+        actual = FUNCTION_TO_TEST(*inputs)
         print(f"Expected: {expected}, Got: {actual}")
         assert actual == expected
         return True

@@ -2,11 +2,11 @@ from module import count_vowels
 FUNCTION_TO_TEST = count_vowels
 
 TESTS = [
-    (("hello",), 2),
-    (("AEIOU",), 5),
-    (("xyz",), 0),
-    (("",), 0),
-    (("ChatGPT",), 1)
+    ("hello", 2),
+    ("AEIOU", 5),
+    ("xyz", 0),
+    ("", 0),
+    ("ChatGPT", 1),
 ]
 
 # ==========================================
