@@ -110,10 +110,13 @@ def reverse_string(s: str) -> str:
 #   - Must return the largest value.
 #
 def max_of_three(a: int, b: int, c: int) -> int:
-    maximum = 0 
-    if int > [int]-1:
-        maximum += int
-        return maximum
-    
+    nums = [a,b,c]
+    largest = nums[0]
+    index = 0
+    while index < len(nums):     #looping over all indexes
+        current_num = nums[index] #get current_num from list
+        if current_num > largest: #compare current_num to largest
+            largest = current_num #replace largest with current num
+    return largest
 
 
